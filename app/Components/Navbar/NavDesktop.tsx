@@ -1,19 +1,20 @@
-import React from 'react'
-import Container from '../Container'
-import Logo from './Logo'
-import { Links } from './Links'
-
+import React from 'react';
+import Container from '../Container';
+import Logo from './Logo';
+import { Links } from './Links';
 
 export const NavDesktop = () => {
   return (
     <Container>
-        <div className='flex justify-between items-center py-4'>
-            <Logo />
+      <div className='flex justify-between items-center py-4'>
+        {/* Logo */}
+        <Logo />
 
-            <Links />
-
-            
+        {/* Desktop Links */}
+        <div className='hidden md:flex space-x-8'>
+          <Links />
         </div>
+      </div>
     </Container>
-  )
-}
+  );
+};

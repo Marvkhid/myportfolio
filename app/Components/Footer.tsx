@@ -3,7 +3,7 @@ import Container from "./Container";
 
 const Footer = () => {
   return (
-    <footer className="py-8 bg-neutral-950 text-neutral-100">
+    <footer className="py-8 bg-neutral-100 text-neutral-100">
       <Container>
         <div className="text-center space-y-6">
           {/* Custom Message */}

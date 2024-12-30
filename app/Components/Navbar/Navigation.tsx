@@ -25,15 +25,15 @@ const Navigation = () => {
         {/* Logo */}
         <Logo />
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex space-x-8">
-          <Links />
-        </div>
-
         {/* Hamburger Button (for mobile) */}
         <Button onClick={toggleMenu} className="md:hidden">
           {isOpen ? <CgClose size="24" /> : <CiMenuBurger size="24" />}
         </Button>
+
+        {/* Desktop Links */}
+        <div className="hidden md:flex space-x-8">
+          <Links />
+        </div>
       </div>
 
       {/* Mobile Menu */}
