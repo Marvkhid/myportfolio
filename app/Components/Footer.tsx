@@ -1,14 +1,14 @@
-import React from 'react';
-import Container from './Container';
+import React from "react";
+import Container from "./Container";
 
 const Footer = () => {
   return (
-    <footer className="py-8 bg-white-950 text-neutral-100">
+    <footer className="py-8 bg-neutral-950 text-neutral-100">
       <Container>
         <div className="text-center space-y-6">
           {/* Custom Message */}
           <p className="text-lg font-semibold text-green-400">
-            "Creating meaningful solutions, one line of code at a time."
+            &quot;Creating meaningful solutions, one line of code at a time.&quot;
           </p>
 
           {/* Newsletter Subscription */}
@@ -37,7 +37,7 @@ const Footer = () => {
             <a href="https://github.com/Markhid" target="_blank" rel="noopener noreferrer">
               <img src="/github.png" alt="GitHub" className="w-6 h-6" />
             </a>
-            <a href="https://twitter.com/Marv_Khid">
+            <a href="https://twitter.com/Marv_Khid" target="_blank" rel="noopener noreferrer">
               <img src="/twitter4.png" alt="Twitter" className="w-6 h-6" />
             </a>
           </div>

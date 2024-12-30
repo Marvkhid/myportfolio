@@ -1,16 +1,25 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
 
-const SocialMediaLink = ( {src, hasBg = false}: {src: string, hasBg?: Boolean}) => {
-  return (
-   <a href="" target='_blank' className={hasBg ? 'bg-green-500 p-2 rounded' : ''}>
-                                   <Image src={src}
-                                   alt='socialmediaicon'
-                                   width={24}
-                                   height={24} />
-                               </a>
-   
-  )
+interface SocialMediaLinkProps {
+  src: string;
+  alt?: string; // Make 'alt' optional to avoid breaking changes
+  hasBg?: boolean;
 }
 
-export default SocialMediaLink
+const SocialMediaLink: React.FC<SocialMediaLinkProps> = ({ src, alt, hasBg }) => {
+  return (
+    <div
+      className={`${
+        hasBg ? "p-2 rounded-full bg-neutral-800" : ""
+      } inline-flex`}
+    >
+      <img
+        src={src}
+        alt={alt || "Social media icon"} // Provide a default value for 'alt'
+        className="w-6 h-6"
+      />
+    </div>
+  );
+};
+
+export default SocialMediaLink;

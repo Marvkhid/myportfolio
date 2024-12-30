@@ -6,13 +6,13 @@ import Container from './Container';
 
 const Hero = () => {
   return (
-    <Section>
+    <Section id="hero"> {/* Pass id prop here */}
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-[1fr_24rem] items-center gap-4 md:gap-12">
           {/* Left Content */}
           <div className="order-2 md:order-1">
-          <h1 className="mb-4 text-green-500 font-bold text-4xl md:text-5xl">
-                          Hi, I am Aden Marvel
+            <h1 className="mb-4 text-green-500 font-bold text-4xl md:text-5xl">
+              Hi, I am Aden Marvel
             </h1>
             <p className="text-neutral-700 mb-8">
               I am a <b>Frontend developer</b> with <b>2 years of experience</b>. 
@@ -48,13 +48,13 @@ const Hero = () => {
 
           {/* Right Content */}
           <div className="relative md:order-2 order-1">
-          <div className="absolute w-full h-full top-4 left-4 rounded-lg bg-green-500 z-[-1] hidden lg:block"></div>
+            <div className="absolute w-full h-full top-4 left-4 rounded-lg bg-green-500 z-[-1] hidden lg:block"></div>
             <Image
               src="/suit2.jpg"
               alt="hero"
               sizes="100vw"
               height={0}
-              layout='responsive'
+              layout="responsive"
               width={0}
               className="w-full h-auto rounded-lg"
               priority
