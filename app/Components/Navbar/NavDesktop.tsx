@@ -6,12 +6,12 @@ import { Links } from './Links';
 export const NavDesktop = () => {
   return (
     <Container>
-      <div className='flex justify-between items-center py-4'>
+      <div className="flex justify-between items-center py-4">
         {/* Logo */}
         <Logo />
 
         {/* Desktop Links */}
-        <div className='hidden md:flex space-x-8'>
+        <div className="hidden md:flex space-x-8">
           <Links />
         </div>
       </div>
